@@ -27,7 +27,7 @@ public class StudentController {
     }
 
     @GetMapping("fetch")
-    public List<Student> getAllStudents(){
+    public List<Student> fetchAllStudents(){
         return studentService.getAllStudents();
     }
 
