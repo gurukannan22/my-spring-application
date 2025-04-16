@@ -21,14 +21,14 @@ public class StudentService {
         if(studentDAO.isIdExists(student.getStudentId())){
             String existingName = studentDAO.getFirstNameById(student.getStudentId());
             studentResponse.setStatus("Failed");
-            studentResponse.setMessage("The Student ID (" + student.getStudentId() + ") you entered belongs to (" +
+            studentResponse.setMessage("The StudentEntity ID (" + student.getStudentId() + ") you entered belongs to (" +
                     existingName + "), Please enter a unique ID.");
             return studentResponse;
         }
 
         studentDAO.saveStudent(student);
         studentResponse.setStatus("Success");
-        studentResponse.setMessage("✅ Student added successfully!");
+        studentResponse.setMessage("✅ StudentEntity added successfully!");
 
         return studentResponse;
     }
