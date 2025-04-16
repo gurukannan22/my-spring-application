@@ -14,7 +14,7 @@ A simple Spring Boot project for practice.
 
 ## Technologies Used
 
-- Java 17
+- Java 21
 
 - Spring Boot 3
 
